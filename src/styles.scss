@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+$colors: (
+  srp-blue: #1E96D4,
+  srp-light-blue: #66BEEB,
+  srp-light-gray: #D8DCE0,
+  srp-gray: #B6BCC6,
+  srp-dark-white: #EEEFF2,
+  srp-white: #FFFFFF,
+  srp-black: #111111,
+  srp-dark-gray: #6B7280,
+  srp-red: #CB253C
+);
+
+$bp-tablet: 426px;
+$bp-desktop: 768px;
+
+@font-face {
+  font-family: Circular-Std-Bold;
+  src: url(assets/fonts/Circular-Std-Bold.otf);
+}
+@font-face {
+  font-family: Circular-Std-Book;
+  src: url(assets/fonts/Circular-Std-Book.otf);
+}
+@font-face {
+  font-family: Circular-Std-Medium;
+  src: url(assets/fonts/Circular-Std-Medium.otf);
+}
