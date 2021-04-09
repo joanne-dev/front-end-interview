@@ -1,0 +1,43 @@
+@import "../../../../../styles";
+.images{
+  display: block;
+  text-align: center;
+  margin-bottom: 48px;
+
+  &__big-image--detail{
+    width: 166.11px;
+    height: 178.67px;
+  }
+  &__little-images{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    &__cont-box{
+      width: 106.9px;
+      height: 44px;
+      &--box{
+        width: 47.64px;
+        height: 36.82px;
+      }
+    }
+    &__cont-earbuds{
+      width: 87.2px;
+      height: 44px;
+      margin-left: 10px;
+      margin-right: 10px;
+      &--earbuds{
+        width: 57.81px;
+        height: 36.82px;
+      }
+    }
+    &__cont-detail{
+      width: 87.2px;
+      height: 44px;
+      &--earbuds-details{
+        width: 73.48px;
+        height: 20.65px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+<div class="container-card">
+    <input class="container-card__radio" type="radio"
+    [name] = radioButtonModel.name
+    [value]= radioButtonModel.value
+    [tabIndex]= radioButtonModel.tabindex
+    [id] = radioButtonModel.id>
+    <div>
+        <label class="container-card__title"
+               [for]=radioButtonModel.id>{{radioButtonModel.title}}</label>
+        <br>
+        <label class="container-card__subtitle"
+               [for]=radioButtonModel.id>{{radioButtonModel.subtitle}}</label>
+    </div>
+    <div>
+        {{radioButtonModel.price}}
+    </div>
+</div>

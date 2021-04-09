@@ -1,0 +1,49 @@
+@import "../../../../../../src/styles.scss";
+.information{
+  display: block;
+  &__titles{
+    display: flex;
+    font-family: Circular-Std-Medium, sans-serif;
+    font-size: 19.2px;
+    color: map-get($colors , srp-dark-gray);
+    line-height: 24px;
+    font-weight: normal;
+    width: 299px;
+    margin-bottom: 13px;
+    &--third-t{
+      &--first-w{
+        display: none;
+        @media (min-width: $bp-tablet) {
+          display: revert;
+        }
+      }
+      &--second-w{
+        display: none;
+        @media (min-width: $bp-desktop){
+          display: revert;
+        }
+      }
+    }
+  }
+}
+.items{
+  width: 33.33%;
+  outline: none;
+}
+.items:hover{
+  font-family: Circular-Std-Medium, sans-serif;
+  color: map-get($colors , srp-black);
+  text-decoration: underline map-get($colors , srp-black);
+  text-underline-offset: 4px;
+  line-height: 24px;
+}
+:focus{
+  outline:none;
+}
+.active-router{
+  font-family: Circular-Std-Medium, sans-serif;
+  color: map-get($colors , srp-black);
+  text-decoration: underline map-get($colors , srp-black);
+  text-underline-offset: 4px;
+  line-height: 24px;
+}

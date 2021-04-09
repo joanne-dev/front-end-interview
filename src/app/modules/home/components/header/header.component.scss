@@ -1,0 +1,23 @@
+@import "../../../../../styles";
+.header{
+  display: flex;
+  height: 67px;
+  &__logo-image{
+    background-image: url('../../../../../assets/images/logo_mobil_50x50.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-width: $bp-tablet) {
+      background-image: url('../../../../../assets/images/logo_mobil_58x58.png');
+    }
+    @media (min-width: $bp-desktop){
+
+    }
+  }
+  @media (min-width: $bp-tablet) {
+    height: 77px;
+  }
+}
+.space{
+  margin-bottom: 50.17px;
+}

@@ -1,0 +1,131 @@
+{
+  "wireless": {
+    "previewImages": {
+      "previewImagesMobil": {
+        "sBox": "",
+        "sEarbuds": "",
+        "sEarbudsDetails": ""
+      },
+      "previewImagesDesktop": {
+        "sBox": "",
+        "sEarbuds": "",
+        "sEarbudsDetails": ""
+      }
+    },
+    "iconsInfo": [
+      {
+        "icon": "../../../../../assets/images/hand.png",
+        "name": "Customizable Touch Controls"
+      },
+      {
+        "icon": "../../../../../assets/images/sound.png",
+        "name": "Active Noise Cancellation"
+      },
+      {
+        "icon": "../../../../../assets/images/shape.png",
+        "name": "Built-in Equalizer"
+      }
+    ],
+    "features": [
+      {
+        "title": "Choose your finish.",
+        "display": "block",
+        "item": [
+          {
+            "name": "color",
+            "value": 0,
+            "tabindex": 1,
+            "id": "color",
+            "title": "Ivory White",
+            "subtitle": "For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True.",
+            "price": ""
+          },
+          {
+            "name": "color",
+            "value": 0,
+            "tabindex": 2,
+            "id": "color",
+            "title": "Matte Black",
+            "subtitle": "Of all of the celestial bodies that capture our attention and fascination as astronomers.",
+            "price": ""
+          }
+        ]
+      },
+      {
+        "title": "Would you like to add extended warranty coverage?.",
+        "display": "block",
+        "item": [
+          {
+            "name": "coverage",
+            "value": 0,
+            "tabindex": 3,
+            "id": "coverage",
+            "title": "2 years coverage",
+            "subtitle": "For the past 75 years, Sennheiser has put sound first.",
+            "price": ""
+          },
+          {
+            "name": "coverage",
+            "value": 75,
+            "tabindex": 4,
+            "id": "coverage",
+            "title": "3 years coverage",
+            "subtitle": "For the past 75 years, Sennheiser has put sound first.",
+            "price": "+ $75"
+          }
+        ]
+      },
+      {
+        "title": "Features.",
+        "display": "block",
+        "item": [
+          {
+            "name": "feature",
+            "value": 0,
+            "tabindex": 5,
+            "id": "feature",
+            "title": "Voice Assistant support",
+            "subtitle": "",
+            "price": ""
+          },
+          {
+            "name": "feature",
+            "value": 25,
+            "tabindex": 6,
+            "id": "feature",
+            "title": "Customizable controls",
+            "subtitle": "",
+            "price": "+ $25"
+          }
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "title": "Dimensions",
+        "subtitle": "76.8 x 43.8 x 34.7 mm (earbuds and charging case)"
+      },
+      {
+        "title": "USB Standard",
+        "subtitle": "USB-C"
+      },
+      {
+        "title": "Power supply",
+        "subtitle": "Sennheiser 7mm dynamic driver"
+      },
+      {
+        "title": "Frequency response (Microphone)",
+        "subtitle": "100 Hz to 10 kHz"
+      },
+      {
+        "title": "Frequency response",
+        "subtitle": "5 - 21,000 Hz"
+      },
+      {
+        "title": "Noise cancellation",
+        "subtitle": "Single-Mic ANC per earbud side"
+      }
+    ]
+  }
+}
+

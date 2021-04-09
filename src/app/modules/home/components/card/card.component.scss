@@ -1,0 +1,25 @@
+@import "../../../../../styles";
+.container-card{
+  justify-content: space-around;
+  width: 255.65px;
+  display: flex;
+  margin: auto;
+  &__radio{
+    display: none;
+  }
+  &__title{
+    font-family: Circular-Std-Medium, sans-serif;
+    font-size: 14px;
+    color: map-get($colors , srp-black);
+    line-height: 20px;
+    font-weight: normal;
+  }
+  &__subtitle{
+    font-family: Circular-Std-Book, sans-serif;
+    font-size: 14px;
+    color: map-get($colors , srp-dark-gray);
+    line-height: 20px;
+    font-weight: normal;
+  }
+}
+

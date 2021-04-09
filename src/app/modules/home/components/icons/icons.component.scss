@@ -1,0 +1,29 @@
+@import "../../../../../styles";
+.icons{
+  display: flex;
+  align-items: center;
+  &__details{
+    width: 100%;
+    justify-content: center;
+    &--info{
+      display: flex;
+      justify-content: center;
+      &--item{
+        display: block;
+        margin-bottom: 40px;
+      }
+      &--name{
+        font-family: Circular-Std-Book, sans-serif;
+        font-size: 14px;
+        color: map-get($colors , srp-black);
+        line-height: 20px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+.image{
+  display:block;
+  margin:auto;
+  margin-bottom: 16px;
+}

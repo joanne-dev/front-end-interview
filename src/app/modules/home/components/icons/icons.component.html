@@ -1,0 +1,12 @@
+<div class="icons">
+    <div class="icons__details">
+        <div class="icons__details--info" *ngFor="let item of items">
+            <div class="icons__details--info--item">
+                <img class="icons__details--info image" [src]=item.icon alt="">
+                <div class="icons__details--info--name">
+                    {{item.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="content-super">
+    <app-header></app-header>
+    <div class="content-super__first-sec">
+        <app-wireless-preview></app-wireless-preview>
+        <div class="content-super__first-sec__titles">
+            <p class="content-super__first-sec__titles--first-t">NEW RELEASE</p>
+            <p class="content-super__first-sec__titles--second-t">MOMENTUM True Wireless 2</p>
+            <p class="content-super__first-sec__titles--third-t">Earbuds that put sound
+                <span class="content-super__first-sec__titles--third-t--word">first</span></p>
+        </div>
+        <div class="content-super__first-sec--icons">
+            <app-icons></app-icons>
+        </div>
+    </div>
+    <div class="content-super__second-sec">
+        <div class="content-super__second-sec__price">
+            <p class="content-super__second-sec__price--title">STARTING AT</p>
+            <p class="content-super__second-sec--subtitle">$295.95</p>
+        </div>
+        <div class="content-super__second-sec__info">
+            <app-wireless-info></app-wireless-info>
+            <router-outlet></router-outlet>
+        </div>
+        <app-icons></app-icons>
+        <app-preferences></app-preferences>
+        <div class="content-super__second-sec__spec">
+            Specifications.
+            <div class="line"></div>
+            <div class="content-super__second-sec__spec__info" *ngFor="let specification of specifications">
+                <div class="content-super__second-sec__spec__info">
+                    <p>{{specification.title}}</p>
+                    <p>{{specification.subtitle}}</p>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
