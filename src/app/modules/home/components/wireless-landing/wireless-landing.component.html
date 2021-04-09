@@ -22,7 +22,7 @@
             <router-outlet></router-outlet>
         </div>
         <app-icons></app-icons>
-        <app-preferences></app-preferences>
+        <app-preferences (price)="getPrice($event)"></app-preferences>
         <div class="content-super__second-sec__spec">
             <p class="content-super__second-sec__spec--title">Specifications.</p>
             <div class="line"></div>
@@ -35,5 +35,5 @@
             </div>
         </div>
     </div>
-
 </div>
+<app-footer [price] ="price"></app-footer>

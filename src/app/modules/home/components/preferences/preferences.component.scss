@@ -12,5 +12,8 @@
     &--card{
       margin-bottom: 16.19px;
     }
+    &--card:focus{
+      box-shadow: 0 0 0 3px map-get($colors, srp-gray);
+    }
   }
 }

@@ -59,6 +59,7 @@
 
     }
     &__spec{
+      margin-bottom: 278px;
       &--title{
         font-family: Circular-Std-Medium, sans-serif;
         font-size: 19.2px;
@@ -70,6 +71,7 @@
       &__info{
         &__titles{
           margin-bottom: 16px;
+          margin-top: 16px;
           &--title{
             font-family: Circular-Std-Bold, sans-serif;
             font-size: 14px;

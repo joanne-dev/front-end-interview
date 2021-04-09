@@ -3,10 +3,20 @@
   display: block;
   text-align: center;
   margin-bottom: 48px;
-
-  &__big-image--detail{
-    width: 166.11px;
-    height: 178.67px;
+  &__big-image{
+    height: 183px;
+    &--box{
+      width: 166.11px;
+      height: 178.67px;
+    }
+    &--earbuds{
+      width: 189.11px;
+      height: 129.67px;
+    }
+    &--detail{
+      width: 242.11px;
+      height: 76.67px;
+    }
   }
   &__little-images{
     margin-top: 8px;
@@ -42,4 +52,9 @@
 }
 .size{
   width: 30%;
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

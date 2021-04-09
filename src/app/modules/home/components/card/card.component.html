@@ -1,17 +1,21 @@
-<div class="container-card">
-    <input class="container-card__radio" type="radio"
-    [name] = radioButtonModel.name
-    [value]= radioButtonModel.value
-    [tabIndex]= radioButtonModel.tabindex
-    [id] = radioButtonModel.id>
-    <div class="container-card__info">
-        <label class="container-card__title"
-               [for]=radioButtonModel.id>{{radioButtonModel.title}}</label>
-        <div class="space"></div>
-        <label class="container-card__subtitle"
-               [for]=radioButtonModel.id>{{radioButtonModel.subtitle}}</label>
-    </div>
-    <div class="container-card__price">
-        {{radioButtonModel.price}}
-    </div>
+<div class="container-card box">
+    <input class="input-check" type="radio"
+           [name] = radioButtonModel.name
+           [value]= radioButtonModel.value
+           [tabIndex]= radioButtonModel.tabindex
+           [id] = radioButtonModel.id
+           (change)="changeGender(radioButtonModel)">
+    <label class="label-box box-check"
+           [for]="radioButtonModel.id">
+        <div class="label-info">
+            <div>
+                <p class="label-box__title">{{radioButtonModel.title}}</p>
+                <p class="label-box__subtitle">{{radioButtonModel.subtitle}}</p>
+            </div>
+            <div>
+                <p class="label-box__price" *ngIf="radioButtonModel.value>0">+ {{radioButtonModel.value | currency}}</p>
+            </div>
+        </div>
+    </label>
+    <p class="space"></p>
 </div>

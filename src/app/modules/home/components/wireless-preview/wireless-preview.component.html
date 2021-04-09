@@ -1,15 +1,17 @@
 <div class="images">
-    <div class="images__big-image boxes">
-        <img class="images__big-image--detail" src="../../../../../assets/images/box.png" alt="">
+    <div class="images__big-image boxes image" [ngSwitch]="preview">
+        <img *ngSwitchCase="'box'" class="images__big-image--box" [src]=box alt="">
+        <img *ngSwitchCase="'earbuds'" class="images__big-image--earbuds" [src]=earbuds alt="">
+        <img *ngSwitchCase="'earbudsDetails'" class="images__big-image--detail" [src]=earbudsDetails alt="">
     </div>
     <div class="images__little-images">
-        <div class="images__little-images__cont-box boxes size">
+        <div class="images__little-images__cont-box boxes size image" (click)="showPreview('box')">
             <img class="images__little-images__cont-box--box" src="../../../../../assets/images/box.png" alt="">
         </div>
-        <div class="images__little-images__cont-earbuds boxes size">
+        <div class="images__little-images__cont-earbuds boxes size image" (click)="showPreview('earbuds')">
             <img class="images__little-images__cont-earbuds--earbuds" src="../../../../../assets/images/earbuds.png" alt="">
         </div>
-        <div class="images__little-images__cont-detail boxes size">
+        <div class="images__little-images__cont-detail boxes size image" (click)="showPreview('earbudsDetails')">
             <img class="images__little-images__cont-detail--earbuds-details" src="../../../../../assets/images/earbudsDetails.png" alt="">
         </div>
     </div>

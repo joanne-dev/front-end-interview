@@ -5,6 +5,8 @@ $colors: (
   srp-gray: #B6BCC6,
   srp-dark-white: #EEEFF2,
   srp-white: #FFFFFF,
+  srp-lighter-gray: #F5F5F7,
+  srp-border-gray: #D2D2D7,
   srp-black: #111111,
   srp-dark-gray: #6B7280,
   srp-red: #CB253C
@@ -49,10 +51,17 @@ ul {
   color: map-get($colors , srp-dark-gray);
   line-height: 24px;
   font-weight: normal;
-  height: 320px;
+  height: auto;
+  margin-bottom: 48px;
 }
 .boxes{
   border-radius: 8px !important;
   border: 2px solid map-get($colors , srp-dark-white);
   overflow: hidden;
+}
+.boxes:hover{
+  border: 2px solid map-get($colors , srp-gray);
+}
+.box:focus {
+  box-shadow: 0 0 0 3px map-get($colors, srp-light-gray);
 }

@@ -2,7 +2,7 @@
     <div class="features__info" *ngFor="let feature of features">
         <p class="features__info--title">{{feature.title}}</p>
         <div class="features__info--card boxes" *ngFor="let item of feature.item">
-            <app-card [radioButtonModel] = item ></app-card>
+            <app-card (price) = "getPrice($event)" [radioButtonModel] = item ></app-card>
         </div>
     </div>
 </div>

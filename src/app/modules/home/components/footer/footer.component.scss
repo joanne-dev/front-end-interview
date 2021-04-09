@@ -1,0 +1,67 @@
+@import "../../../../../../src/styles.scss";
+.footer{
+  bottom: 0;
+  position: fixed;
+  height: 182px;
+  width: 100%;
+  background-color: map-get($colors , srp-lighter-gray);
+  border: 1px solid map-get($colors , srp-border-gray);
+  &__container{
+    justify-content: flex-end;
+    display: flex;
+    margin: 21px 32px 25px 32px;
+    height: 100%;
+    &__shopping{
+      display: none;
+      @media (min-width: $bp-tablet) {
+        display: block;
+      }
+    }
+    &__warranty{
+      display: none;
+      @media (min-width: $bp-tablet) {
+        display: block;
+      }
+    }
+    &__price-btn{
+      display: block;
+      &__price{
+        display: block;
+        margin-bottom: 24px;
+        text-align: right;
+        &--value{
+          font-family: Circular-Std-Bold, sans-serif;
+          font-size: 27.648px;
+          color: map-get($colors , srp-black);
+          line-height: 32px;
+          font-weight: bold;
+        }
+        &--subtitle{
+          font-family: Circular-Std-Book, sans-serif;
+          font-size: 14px;
+          color: map-get($colors , srp-dark-gray);
+          line-height: 20px;
+          font-weight: normal;
+        }
+      }
+      &__button{
+        border: none !important;
+        border-radius: 8px;
+        background-color: map-get($colors, srp-blue);
+        font-family: Circular-Std-Bold, sans-serif;
+        font-size: 16px;
+        color: map-get($colors, srp-white);
+        line-height: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        width: 113px;
+        height: 64px;
+        float: right;
+      }
+      &__button:hover{
+        background-color: map-get($colors, srp-light-blue);
+      }
+    }
+  }
+}

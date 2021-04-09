@@ -12,6 +12,7 @@ import { WhatsInComponent } from './components/wireless-info/whats-in/whats-in.c
 import { CardComponent } from './components/card/card.component';
 import {FormsModule} from '@angular/forms';
 import { PreferencesComponent } from './components/preferences/preferences.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PreferencesComponent } from './components/preferences/preferences.compo
     WhatsInComponent,
     CardComponent,
     PreferencesComponent,
+    FooterComponent,
   ],
     imports: [
         CommonModule,
