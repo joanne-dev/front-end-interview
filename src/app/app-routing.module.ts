@@ -4,7 +4,7 @@ import {CommonModule} from '@angular/common';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'landing', pathMatch: 'full'},
+  {path: '', redirectTo: 'landing/overview', pathMatch: 'full'},
 ];
 
 @NgModule({

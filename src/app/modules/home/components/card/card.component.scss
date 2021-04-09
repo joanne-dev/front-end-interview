@@ -4,6 +4,9 @@
   width: 255.65px;
   display: flex;
   margin: auto;
+  &__info{
+    padding-top: 24px;
+  }
   &__radio{
     display: none;
   }
@@ -20,6 +23,9 @@
     color: map-get($colors , srp-dark-gray);
     line-height: 20px;
     font-weight: normal;
+  }
+  &__price{
+    width:60px;
   }
 }
 
