@@ -24,12 +24,12 @@
         <app-icons></app-icons>
         <app-preferences></app-preferences>
         <div class="content-super__second-sec__spec">
-            Specifications.
+            <p class="content-super__second-sec__spec--title">Specifications.</p>
             <div class="line"></div>
             <div class="content-super__second-sec__spec__info" *ngFor="let specification of specifications">
-                <div class="content-super__second-sec__spec__info">
-                    <p>{{specification.title}}</p>
-                    <p>{{specification.subtitle}}</p>
+                <div class="content-super__second-sec__spec__info__titles">
+                    <p class="content-super__second-sec__spec__info__titles--title">{{specification.title}}</p>
+                    <p class="content-super__second-sec__spec__info__titles--subtitle">{{specification.subtitle}}</p>
                 </div>
                 <div class="line"></div>
             </div>

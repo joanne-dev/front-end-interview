@@ -55,6 +55,38 @@
         font-weight: 700;
       }
     }
+    &__info{
+
+    }
+    &__spec{
+      &--title{
+        font-family: Circular-Std-Medium, sans-serif;
+        font-size: 19.2px;
+        color: map-get($colors , srp-black);
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      &__info{
+        &__titles{
+          margin-bottom: 16px;
+          &--title{
+            font-family: Circular-Std-Bold, sans-serif;
+            font-size: 14px;
+            color: map-get($colors , srp-black);
+            line-height: 20px;
+            font-weight: normal;
+          }
+          &--subtitle{
+            font-family: Circular-Std-Book, sans-serif;
+            font-size: 14px;
+            color: map-get($colors , srp-black);
+            line-height: 20px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
   }
   &__info{
     height: 412px;
