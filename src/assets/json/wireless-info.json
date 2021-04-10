@@ -22,7 +22,7 @@
         "name": "Active Noise Cancellation"
       },
       {
-        "icon": "../../../../../assets/images/shape.png",
+        "icon": "../../../../../assets/images/hand.png",
         "name": "Built-in Equalizer"
       }
     ],
@@ -36,7 +36,7 @@
         "name": "Built-in Equalizer"
       },
       {
-        "icon": "../../../../../assets/images/sound.png",
+        "icon": "../../../../../assets/images/hand.png",
         "name": "Active Noise Cancellation"
       }
     ],

@@ -144,6 +144,6 @@
 }
 .first-sec{
   @media (min-width: $bp-desktop) {
-    position: fixed;
+    position: absolute;
   }
 }

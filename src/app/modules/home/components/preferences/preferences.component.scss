@@ -2,6 +2,13 @@
 .features{
   &__info{
     display: block;
+    margin-bottom: 48px;
+    @media (min-width: $bp-tablet) {
+      margin-bottom: 72.06px;
+    }
+    @media (min-width: $bp-desktop) {
+      margin-bottom: 72px;
+    }
     &__title{
       font-family: Circular-Std-Medium, sans-serif;
       font-size: 19px;
