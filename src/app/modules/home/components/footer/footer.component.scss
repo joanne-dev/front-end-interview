@@ -24,6 +24,10 @@
       @media (min-width: $bp-tablet) {
         display: block;
       }
+      @media (min-width: $bp-desktop) {
+        margin-right: 32px;
+        margin-bottom: 40px;
+      }
       &--title{
         font-family: Circular-Std-Medium, sans-serif;
         font-size: 14px;
@@ -31,6 +35,9 @@
         line-height: 24px;
         font-weight: bold;
         margin-bottom: 16px;
+        @media (min-width: $bp-desktop) {
+          margin-bottom: 8px;
+        }
       }
       &--subtitle{
         font-family: Circular-Std-Book, sans-serif;
@@ -40,6 +47,9 @@
         font-weight: normal;
         @media (min-width: $bp-tablet) {
           display: none;
+        }
+        @media (min-width: $bp-desktop) {
+          display: block;
         }
       }
     }
@@ -89,5 +99,10 @@
         background-color: map-get($colors, srp-light-blue);
       }
     }
+  }
+}
+.info-container{
+  @media (min-width: $bp-desktop) {
+    display: flex;
   }
 }

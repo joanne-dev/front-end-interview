@@ -2,8 +2,7 @@
     <div class="features__info" *ngFor="let feature of features">
         <p class="features__info__title">{{feature.title}}<span class="features__info__title--words" *ngIf="validateTitle(feature)"> warranty coverage?.</span></p>
         <div class="features__info__title__cards" [style.display]=feature.display >
-            <div class="features__info__title__cards--card boxes" [style.marginRight]=feature.item[0].margin
-                 *ngFor="let item of feature.item">
+            <div class="features__info__title__cards--card boxes" *ngFor="let item of feature.item" [style.marginRight]=item.margin>
                 <app-card (price) = "getPrice($event)" [radioButtonModel] = item></app-card>
             </div>
         </div>
