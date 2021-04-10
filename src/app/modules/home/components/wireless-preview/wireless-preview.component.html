@@ -5,15 +5,15 @@
         <img *ngSwitchCase="'earbudsDetails'" class="images__big-image--detail" [src]=earbudsDetails alt="">
     </div>
     <div class="images__little-images">
-        <input name = "preview" id = "box" class="input-image" type="radio">
+        <input name = "preview" id = "box" class="input-image" type="radio" tabindex="1">
         <label for="box" class="images__little-images__cont-box boxes size image" (click)="showPreview('box')">
             <img class="images__little-images__cont-box--box" src="../../../../../assets/images/box.png" alt="">
         </label>
-        <input name = "preview" id = "earbuds" class="input-image" type="radio">
+        <input name = "preview" id = "earbuds" class="input-image" type="radio" tabindex="2">
         <label for="earbuds" class="images__little-images__cont-earbuds boxes size image" (click)="showPreview('earbuds')">
             <img class="images__little-images__cont-earbuds--earbuds" src="../../../../../assets/images/earbuds.png" alt="">
         </label>
-        <input name = "preview" id = "detail" class="input-image" type="radio">
+        <input name = "preview" id = "detail" class="input-image" type="radio" tabindex="3">
         <label for="detail" class="images__little-images__cont-detail boxes size image" (click)="showPreview('earbudsDetails')">
             <img class="images__little-images__cont-detail--earbuds-details" src="../../../../../assets/images/earbudsDetails.png" alt="">
         </label>

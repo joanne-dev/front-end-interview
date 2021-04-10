@@ -2,7 +2,7 @@
     <input class="input-check" type="radio"
            [name] = radioButtonModel.name
            [value]= radioButtonModel.value
-           [tabIndex]= radioButtonModel.tabindex
+           [tabIndex] = radioButtonModel.tabindex
            [id] = radioButtonModel.id
            (change)="changeGender(radioButtonModel)">
     <label class="label-box box-check"
@@ -12,8 +12,8 @@
                 <p class="label-box__title">{{radioButtonModel.title}}</p>
                 <p class="label-box__subtitle">{{radioButtonModel.subtitle}}</p>
             </div>
-            <div>
-                <p class="label-box__price" *ngIf="radioButtonModel.value>0">+ {{radioButtonModel.value | currency}}</p>
+            <div class="price">
+                <div class="label-box__price" *ngIf="radioButtonModel.value>0">+ {{radioButtonModel.value | currency}}</div>
             </div>
         </div>
     </label>

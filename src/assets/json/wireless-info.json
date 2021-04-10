@@ -1,17 +1,5 @@
 {
   "wireless": {
-    "previewImages": {
-      "previewImagesMobil": {
-        "sBox": "",
-        "sEarbuds": "",
-        "sEarbudsDetails": ""
-      },
-      "previewImagesDesktop": {
-        "bBox": "",
-        "bEarbuds": "",
-        "bEarbudsDetails": ""
-      }
-    },
     "iconsInfo": [
       {
         "icon": "../../../../../assets/images/hand.png",
