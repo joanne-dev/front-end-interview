@@ -10,7 +10,13 @@ export class IconsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.items = wirelessInfo.wireless.iconsInfo;
+    this.reorderIcons();
   }
-
+  reorderIcons(){
+    if (window.matchMedia('(min-width: 767px)').matches) {
+      this.items = wirelessInfo.wireless.iconsInfoReOrder;
+    } else {
+      this.items = wirelessInfo.wireless.iconsInfo;
+    }
+  }
 }

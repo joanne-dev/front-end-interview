@@ -5,29 +5,59 @@
   margin-bottom: 48px;
   &__big-image{
     height: 183px;
+    @media (min-width: $bp-tablet) {
+      height: 337px;
+      margin-bottom: 20.01px;
+    }
+    @media (min-width: $bp-desktop) {
+      width: 592px;
+      height: 337px;
+    }
     &--box{
       width: 166.11px;
       height: 178.67px;
+      @media (min-width: $bp-tablet) {
+        width: 300.85px;
+        height: 328.98px;
+      }
     }
     &--earbuds{
       width: 189.11px;
       height: 129.67px;
+      @media (min-width: $bp-tablet) {
+        width: 326.85px;
+        height: 229.98px
+      }
     }
     &--detail{
       width: 242.11px;
       height: 76.67px;
+      @media (min-width: $bp-tablet) {
+        width: 391.85px;
+        height: 128.98px;
+      }
     }
   }
   &__little-images{
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
+    @media (min-width: $bp-tablet) {
+      height: 100px;
+    }
     &__cont-box{
       width: 106.9px;
       height: 44px;
+      @media (min-width: $bp-tablet) {
+        height: 100px;
+      }
       &--box{
         width: 47.64px;
         height: 36.82px;
+        @media (min-width: $bp-tablet) {
+          width: 75.9px;
+          height: 83px;
+        }
       }
     }
     &__cont-earbuds{
@@ -35,17 +65,31 @@
       height: 44px;
       margin-left: 10px;
       margin-right: 10px;
+      @media (min-width: $bp-tablet) {
+        height: 100px;
+      }
       &--earbuds{
         width: 57.81px;
         height: 36.82px;
+        @media (min-width: $bp-tablet) {
+          width: 112.73px;
+          height: 82.67px;
+        }
       }
     }
     &__cont-detail{
       width: 87.2px;
       height: 44px;
+      @media (min-width: $bp-tablet) {
+        height: 100px;
+      }
       &--earbuds-details{
         width: 73.48px;
         height: 20.65px;
+        @media (min-width: $bp-tablet) {
+          width: 142.38px;
+          height: 45.98px;
+        }
       }
     }
   }

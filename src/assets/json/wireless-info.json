@@ -26,6 +26,20 @@
         "name": "Built-in Equalizer"
       }
     ],
+    "iconsInfoReOrder": [
+      {
+        "icon": "../../../../../assets/images/hand.png",
+        "name": "Customizable Touch Controls"
+      },
+      {
+        "icon": "../../../../../assets/images/shape.png",
+        "name": "Built-in Equalizer"
+      },
+      {
+        "icon": "../../../../../assets/images/sound.png",
+        "name": "Active Noise Cancellation"
+      }
+    ],
     "features": [
       {
         "title": "Choose your finish.",
@@ -37,7 +51,8 @@
             "tabindex": 1,
             "id": "color",
             "title": "Ivory White",
-            "subtitle": "For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True."
+            "subtitle": "For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True.",
+            "margin": 0
           },
           {
             "name": "color",
@@ -45,12 +60,13 @@
             "tabindex": 2,
             "id": "color2",
             "title": "Matte Black",
-            "subtitle": "Of all of the celestial bodies that capture our attention and fascination as astronomers."
+            "subtitle": "Of all of the celestial bodies that capture our attention and fascination as astronomers.",
+            "margin": 0
           }
         ]
       },
       {
-        "title": "Would you like to add extended warranty coverage?.",
+        "title": "Would you like to add extended",
         "display": "block",
         "item": [
           {
@@ -59,7 +75,8 @@
             "tabindex": 3,
             "id": "coverage",
             "title": "2 years coverage",
-            "subtitle": "For the past 75 years, Sennheiser has put sound first."
+            "subtitle": "For the past 75 years, Sennheiser has put sound first.",
+            "margin": 0
           },
           {
             "name": "coverage",
@@ -67,7 +84,8 @@
             "tabindex": 4,
             "id": "coverage2",
             "title": "3 years coverage",
-            "subtitle": "For the past 75 years, Sennheiser has put sound first."
+            "subtitle": "For the past 75 years, Sennheiser has put sound first.",
+            "margin": 0
           }
         ]
       },
@@ -81,7 +99,8 @@
             "tabindex": 5,
             "id": "feature",
             "title": "Voice Assistant support",
-            "subtitle": ""
+            "subtitle": "",
+            "margin": 0
           },
           {
             "name": "feature",
@@ -89,7 +108,8 @@
             "tabindex": 6,
             "id": "feature2",
             "title": "Customizable controls",
-            "subtitle": ""
+            "subtitle": "",
+            "margin": 0
           }
         ]
       }

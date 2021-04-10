@@ -1,37 +1,41 @@
 <div class="content-super">
     <app-header></app-header>
-    <div class="content-super__first-sec">
-        <app-wireless-preview></app-wireless-preview>
-        <div class="content-super__first-sec__titles">
-            <p class="content-super__first-sec__titles--first-t">NEW RELEASE</p>
-            <p class="content-super__first-sec__titles--second-t">MOMENTUM True Wireless 2</p>
-            <p class="content-super__first-sec__titles--third-t">Earbuds that put sound
-                <span class="content-super__first-sec__titles--third-t--word">first</span></p>
-        </div>
-        <div class="content-super__first-sec--icons">
-            <app-icons></app-icons>
-        </div>
-    </div>
-    <div class="content-super__second-sec">
-        <div class="content-super__second-sec__price">
-            <p class="content-super__second-sec__price--title">STARTING AT</p>
-            <p class="content-super__second-sec__price--subtitle">$295.95</p>
-        </div>
-        <div class="content-super__second-sec__info">
-            <app-wireless-info></app-wireless-info>
-            <router-outlet></router-outlet>
-        </div>
-        <app-icons></app-icons>
-        <app-preferences (price)="getPrice($event)"></app-preferences>
-        <div class="content-super__second-sec__spec">
-            <p class="content-super__second-sec__spec--title">Specifications.</p>
-            <div class="line"></div>
-            <div class="content-super__second-sec__spec__info" *ngFor="let specification of specifications">
-                <div class="content-super__second-sec__spec__info__titles">
-                    <p class="content-super__second-sec__spec__info__titles--title">{{specification.title}}</p>
-                    <p class="content-super__second-sec__spec__info__titles--subtitle">{{specification.subtitle}}</p>
+    <div class="content-super__sections">
+        <div class="content-super__first-sec">
+            <div class="first-sec">
+                <app-wireless-preview></app-wireless-preview>
+                <div class="content-super__first-sec--icons">
+                    <app-icons class="content-super__first-sec--icons--comp"></app-icons>
                 </div>
+            </div>
+        </div>
+        <div class="content-super__second-sec">
+            <div class="content-super__second-sec__titles">
+                <p class="content-super__second-sec__titles--first-t">NEW RELEASE</p>
+                <p class="content-super__second-sec__titles--second-t">MOMENTUM True Wireless 2</p>
+                <p class="content-super__second-sec__titles--third-t">Earbuds that put sound
+                    <span class="content-super__second-sec__titles--third-t--word">first</span></p>
+            </div>
+            <div class="content-super__second-sec__price">
+                <p class="content-super__second-sec__price--title">STARTING AT</p>
+                <p class="content-super__second-sec__price--subtitle">$295.95</p>
+            </div>
+            <div class="content-super__second-sec__info">
+                <app-wireless-info></app-wireless-info>
+                <router-outlet></router-outlet>
+            </div>
+            <app-icons class="content-super__second-sec--icons"></app-icons>
+            <app-preferences (price)="getPrice($event)"></app-preferences>
+            <div class="content-super__second-sec__spec">
+                <p class="content-super__second-sec__spec--title">Specifications.</p>
                 <div class="line"></div>
+                <div class="content-super__second-sec__spec__info" *ngFor="let specification of specifications">
+                    <div class="content-super__second-sec__spec__info__titles">
+                        <p class="content-super__second-sec__spec__info__titles--title">{{specification.title}}</p>
+                        <p class="content-super__second-sec__spec__info__titles--subtitle">{{specification.subtitle}}</p>
+                    </div>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
     </div>

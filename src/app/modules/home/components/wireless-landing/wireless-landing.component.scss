@@ -2,15 +2,50 @@
 .content-super{
   padding-left: 14px;
   padding-right: 14px;
+  @media (min-width: $bp-tablet) {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+  &__sections{
+    @media (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
   &__first-sec{
     display: block;
+    @media (min-width: $bp-desktop) {
+
+    }
+    &--icons{
+      display: none;
+      &--comp{
+        @media (min-width: $bp-tablet) {
+          width: 100%;
+        }
+      }
+      @media (min-width: $bp-tablet) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__second-sec{
+    @media (min-width: $bp-desktop) {
+      margin-left: 635px;
+    }
     &__titles{
       margin-bottom: 48px;
+      @media (min-width: $bp-tablet) {
+        width: 423px;
+      }
       &--first-t{
         font-family: Circular-Std-Book, sans-serif;
         font-size: 13.333px;
         color: map-get($colors , srp-red);
         line-height: 16px;
+        @media (min-width: $bp-tablet) {
+          margin-bottom: 8px;
+        }
       }
       &--second-t{
         font-family: Circular-Std-Bold, sans-serif;
@@ -18,6 +53,10 @@
         color: map-get($colors , srp-black);
         line-height: 44px;
         font-weight: 700;
+        @media (min-width: $bp-tablet) {
+          font-size: 39.81px;
+          line-height: 48px;
+        }
       }
       &--third-t{
         font-family: Circular-Std-Book, sans-serif;
@@ -25,6 +64,9 @@
         color: map-get($colors , srp-dark-gray);
         line-height: 32px;
         font-weight: normal;
+        @media (min-width: $bp-tablet) {
+          font-size: 27.65px;
+        }
         &--word{
           display: none;
           @media (min-width: $bp-tablet) {
@@ -33,11 +75,6 @@
         }
       }
     }
-    &--icons{
-      display: none;
-    }
-  }
-  &__second-sec{
     &__price{
       display: block;
       margin-bottom: 48px;
@@ -53,6 +90,7 @@
         font-size: 40px;
         color: map-get($colors , srp-black);
         font-weight: 700;
+        line-height: 48px;
       }
     }
     &__info{
@@ -72,6 +110,10 @@
         &__titles{
           margin-bottom: 16px;
           margin-top: 16px;
+          @media (min-width: $bp-tablet) {
+            display: flex;
+            justify-content: space-between;
+          }
           &--title{
             font-family: Circular-Std-Bold, sans-serif;
             font-size: 14px;
@@ -89,9 +131,19 @@
         }
       }
     }
+    &--icons{
+      @media (min-width: $bp-tablet) {
+        display: none;
+      }
+    }
   }
   &__info{
     height: 412px;
     width: 100%;
+  }
+}
+.first-sec{
+  @media (min-width: $bp-desktop) {
+    position: fixed;
   }
 }
